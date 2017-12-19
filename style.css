@@ -1,0 +1,136 @@
+*{
+padding:0;
+margin:0;
+box-sizing:border-box;
+}
+ body {
+background: rgba(0,0,0,0.7);
+}
+.modal, .modal2,.modal-3{
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    z-index: 1;
+    height: 100vh;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.modal-3{
+        display: none;
+}
+.modal-content,.modal-content2{
+    overflow: auto;
+    height: 80vh;
+    width: 40%;
+    background: white;
+    margin:100px auto 0px;
+   animation: drop 0.8s linear;
+}
+.pass{
+    height: 40vh;
+    width: 30%;
+    background: white;
+    margin:150px auto 0px;
+    text-align: center;
+    padding-top: 20px;
+
+}
+.modal-content h1, .modal-content2 h1{
+    text-align: center;
+    font-family: roboto5;
+    padding-top: 10px;
+}
+.signup-art, .signup-temp{
+    border: none;
+    width: 50%;
+    float: left;
+    background: none;
+    margin-top: 10px;
+    padding: 10px;
+    font-family: roboto3;
+    color: black;
+    font-family: 25px;
+    color: #333;
+    border-bottom: 1px solid  #657b99;
+}
+.border{
+    border-bottom: 3px solid #657b99;
+}
+
+.name{
+    border: none;
+    border-bottom: 2px solid #657b99;
+    padding: 40px;
+    padding-bottom: 10px;
+    width: 90%;
+    outline: none;
+    font-family: roboto3;
+    font-size: 15px;
+    transform-origin: center center;
+    transition: all 0.2s linear;
+}
+.name:focus{
+    border-bottom: 2px solid  #763626;
+}
+.signup-art::after, .signup-temp::after{
+        transform: border 0.1s linear;
+}
+.modal button{
+    outline: none;
+}
+.form1, .form2, .step-login{
+    padding-top: 50px;
+    text-align: center;
+    display: block;
+}
+.form2{
+display:none;
+}
+.signup, .login, .change,.logout,.changep{
+    border: none;
+    width: 40%;
+    background: #657b99;
+    height: 50px;
+    margin-top: 20px;
+    color: white;
+    font-family: roboto3;
+    font-size: 20px;
+    outline: none;
+}
+.change{
+float:right
+}
+.wrapper{
+	width:50%;
+	height:500px;
+	margin: 100px auto;
+	background:white;
+}
+.pro-picture{
+	height:250px;
+	width:250px;
+	display:block;
+	border-radius:50%;
+	background:url(user.jpg);
+	background-position:center;
+	background-size:cover;
+	position:absolute;
+	left:40%;
+	top:-10px;
+	margin: auto;
+	box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+}
+.wrapper h2{
+text-align:center;
+padding-top:150px;
+}
+.information{
+	height:200px;
+	width: 80%;
+	background:#657b99;
+	margin: auto;
+}
+.pass{
+    /*display: none;*/
+}
